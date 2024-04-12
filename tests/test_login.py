@@ -1,6 +1,6 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from Sprint_5.locators import RegistrationPageLocators, AutorizationPageLocators, MainPageLocators
+from Sprint_5.qa_python_sprint_5.locators import RegistrationPageLocators, AutorizationPageLocators, MainPageLocators
 from Sprint_5.User_data import UserData
 
 

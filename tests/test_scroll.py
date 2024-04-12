@@ -1,6 +1,6 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-from Sprint_5.locators import MainPageLocators
+from Sprint_5.qa_python_sprint_5.locators import MainPageLocators
 
 
 class TestScroll:
