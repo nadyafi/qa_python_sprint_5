@@ -22,6 +22,7 @@ sdist/
 var/
 wheels/
 .venv/
+.DS_Store/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
