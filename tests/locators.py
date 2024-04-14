@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators:
     CURRENT_SECTION = [By.XPATH, ".//div[contains(@class, 'current')]/span"]  # Текущий раздел
-    LK = [By.XPATH, ".//a[@href='/account']"]  # Личный кабинет в хэдере
+    LK = [By.XPATH, ".//a[@href='/account']"]  # Личный кабинет в хедере
     CONSTRUCTOR = [By.XPATH, ".//a[contains(@class, 'AppHeader_header__link')][@href='/']"]  # Ссылка на Конструктор
     LOGO = [By.XPATH, ".//div[contains(@class, 'AppHeader_header__logo')]/a"]  # Ссылка на конструктор из логотипа
     ORDER_BUTTON = [By.XPATH, ".//button[contains(@class, 'button_button_size_large') and text()='Оформить заказ']"]
@@ -12,8 +12,14 @@ class MainPageLocators:
     BREAD = [By.XPATH, "//span[@class='text text_type_main-default' and text() = 'Булки']"]  # Раздел Булки
     SAUCES = [By.XPATH, "//span[@class='text text_type_main-default' and text() = 'Соусы']"]  # Раздел Соусы
     TOPPING = [By.XPATH, "//span[@class='text text_type_main-default' and text() = 'Начинки']"]  # Раздел Начинки
+    ACTIVE_SECTION_BREAD = By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 " \
+                                    "noselect']"  # активен раздел «Булки»
+    ACTIVE_SECTION_SAUCES = By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 " \
+                                      "pl-10 noselect']"  # активен раздел  «Соусы»
+    ACTIVE_SECTION_TOPPINGS = By.XPATH, ".//div[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 " \
+                                       "pl-10 noselect']"  # активен раздел «Начинки»
     LOGIN_ACCOUNT_BUTTON = [By.XPATH,
-                            ".//button[contains(@class, 'button_button_size_large') and text()='Войти в аккаунт']"]
+                            ".//button[contains(@class, 'button_button_size_large') and text() = 'Войти в аккаунт']"]
     # Кнопка Войти в аккаунт на Главной
 
 
